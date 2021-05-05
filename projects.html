@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %} Projects {% endblock %}
+{% block content %}
+<h1 style = "margin: 10px"> Projects </h1>
+<p style = "margin: 10px">
+In addition to my education, below are some additional projects that I have picked up along my journey
+through finance, risk, data science, and coding. <br>
+<br>
+1. <a href = https://github.com/njbultman/xlsxFunctions> xlsxFunctions R Package </a> <br>
+From my time in the working world, I have often come across people not using a certain tool/technology
+because it would take longer to learn the syntax than to do it in a tool that you already know (and
+certainly not best suited for the job). A perfect example of this is with R and Microsoft Excel (Excel). 
+Even more specifically, using Vlookups with large amounts of data in Excel when you could perform the
+same operation in R via a left join. In Excel, it takes a long time for a Vlookup to calculate with a
+large amount of data (and recalculate every time you change something), and this is a huge pain when a
+few lines of code in R could do the same operation in a fraction of the time (and then you just export 
+it back into Excel). <br>
+<br>
+This package is all about bridging the syntax gap from Excel to R. For our Vlookup example, I created a 
+Vlookup function in R that works exactly the same, and in the R documentation of the package it helps you 
+understand the "R version" of Vlookup (left join). My goal is to help savvy Excel users make the most of 
+their time by switching between Excel and R whenever it is most convenient for their data analyses. <br> 
+<br>
+To download the package from my Github to your R environment, execute the following command in the console after 
+loading the devtools package: install_github("njbultman/xlsxFunctions") <br>
+<br>
+2. <a href = https://github.com/njbultman/pyxlsxfunctions> pyxlsxfunctions Python Package </a> <br>
+My motivation for creating this Python package stems from the same motive for why I developed the xlxsFunctions R 
+package. Oftentimes in my professional life I see my colleagues attempting to complete a task with one tool when 
+another one might be more suitable. However, because it would take a lot longer to learn the new tool's syntax, 
+they continue to use the less optimal tool. This package helps to bridge the gap between Microsoft Excel and 
+Python by allowing you to use functions from Excel in Python. <br>
+<br>
+To download this package from my GitHub, enter the following command in the terminal: "pip install git+https://github.com/njbultman/pyxlsxfunctions" <br>
+<br>
+3. <a href = https://github.com/njbultman/RShiny-Applications> R Shiny Applications </a> <br>
+I was introduced to R's Shiny package early in my coding journey, and I am still in love with it even 
+after all of this time. Its ability to make code dynamic is truly refreshing, and it has helped me convince 
+my finance colleagues that R can compete with Excel in areas other than efficiency in data processing. <br>
+This area houses some of my Shiny applications that I built to (1) better understand the Shiny foundations and 
+(2) explore some fun datasets and areas I find interesting. <br>
+GitHub is the host, so one must have a local R session running with the Shiny package installed and loaded. 
+When launching the application, it will automatically install any dependencies. The link above will take you 
+to my GitHub repository to view the code (this will also show the necessary packages to run the application). <br>
+In the console, run the command:
+runGitHub(repo = "RShiny-Applications", username = "njbultman", subdir = application folder) <br>
+For example, if I wanted to launch the "Stock-Station" application, I would type in the console: <br>
+runGitHub(repo = "RShiny-Applications", username = "njbultman", subdir = "Stock-Station") <br>
+<br>
+4. <a href = https://www.kaggle.com/njbultman> Kaggle Profile </a> <br>
+I like to think of Kaggle as a data science playground. Here, there are many different publicly available datasets 
+to get lost in. While not all of the datasets are focused on it, the majority are centered around predictive 
+modeling. Kaggle even hosts competitions where you can win prizes if you build a model that can predict better than 
+the other competitors' models. In March of 2021, I placed in the top 10% for the NCAAM March Madness Kaggle 
+competition. <br>
+My profile contains a variety of notebooks in R and Python that show my model creation and data visualization 
+capabilities. <br>
+<br>
+5. Stock Algorithm <br>
+Being a finance major and having a good amount of hands-on data science/programming experience with R and Python by the fall of 2020, 
+I wanted to put both of these to the test so I could answer one question: can I build a fully automated stock algorithm 
+(programming aspect) that leverages financial concepts and machine learning to make money (finance/data science aspect)? Through 
+a strategy that incorporates machine learning and creating a data preparation pipeline, I developed a fully automated stock algorithm 
+that runs daily with R and Python scripts that hit the TD Ameritrade API. Even though I do not have the code posted 
+to my GitHub, it is something I would love to discuss more in person.
+</p>
+{% endblock %}

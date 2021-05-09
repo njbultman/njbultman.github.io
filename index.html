@@ -1,30 +1,86 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Nick Bultman">
-    <meta name="description" content="Nick Bultman's Blog">
-    <title>Nick Bultman's Website</title>
+    <meta name="description" content="Base layout for website">
+
+    <title>Nick Bultman</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/static/pictures/soccer_icon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/button.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/webfont.js"></script>
+    <script src="/static/js/snap.svg-min.js"></script>
+    <script src="/static/js/underscore-min.js"></script>
+    <script src="/static/js/sequence-diagram-min.js"></script>
+
 </head>
-
 <body>
-    <h1><a href="/">Nick Bultman's Website</a></h1>
+    <nav class="navbar">
+      <div class="container">
+        <a style="color:white;"><b>NICK</b> BULTMAN</a>
+        <div style="float:right;">
+          <ul style="list-style:none;display:flex;">
+            <a href="/" class="left"><li class="link-list">ABOUT</li></a>
+            <a href="/education/" class="left"><li class="link-list">EDUCATION</li></a>
+            <a href="/projects/" class="left"><li class="link-list">PROJECTS</li></a>
+            <a href="/blog/" class="left"><li class="link-list">BLOG</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="padding-bottom:100px;">
+        <br>
+        <main id="body-fade">
+            
 
-    <div>
-        
-    <h2>Content</h2>
-    <ul>
-    
-        <li>
-            <a href="/projects/">Projects</a>
-        </li>
-    
-        <li>
-            <a href="/education/">Education</a>
-        </li>
-    
-    </ul>
+<h3 class="post-title"><b>Welcome!</b></h3>
+<p style="text-align: center;">
+<img  src="/static/pictures/Professional_Photo.jpeg" alt="Professional Photo">
+<br>
+My name is Nick, and I am currently a senior financial analyst at CUNA Mutual Group supporting IT.
+While my interest has mostly been focused around finance and data science, I always thought it would
+be fun to build my own website. Throughout the years I have slowly built up my knowledge of
+various web development languages (HTML, CSS, Javascript, etc.), and after watching some tutorials
+about using a Python module (Flask) as a back end and seeing some excellent examples online (a big thanks to 
+John Yang for his walkthrough on static websites with Frozen Flask, which can be found 
+<a href = https://john-b-yang.github.io/flask-website/> here </a>), I finally  had the basic tools to create my own 
+"resume site" to showcase my skills in a different format than LinkedIn allows. I know I still have a long way to 
+go before I can create a really cool site, but that is the fun of it, right? <br>
+<br>
+Just like I mention on LinkedIn with my Kaggle profile, more work is always being added, so please 
+check back often! <br>
+<br>
+Lastly, note that I do not own the rights to any pictures used on this site. All pictures belong to their respective
+owners. <br>
+<br>
+-Nick Bultman <br>
+<br>
+Email: njbultman74@gmail.com <br>
+<br>
+Phone: 608-445-4784
+</p>
 
+
+        </main>
     </div>
+    <nav class="navfoot">
+      <div style="text-align:center;">
+        &copy; 2021 |
+        &thinsp; <a href="https://www.linkedin.com/in/nicholasbultman" class="link-fa"><i class="fa fa-linkedin fa-lg"></i></a>
+        &thinsp; <a href="http://github.com/njbultman" class="link-fa"><i class="fa fa-github fa-lg"></i></a>
+      </div>
+    </nav>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
+
 </html>

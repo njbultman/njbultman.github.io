@@ -157,7 +157,34 @@ hr.fade {
   color: #039ae4;
 }
 
+/* Courses Section Boxes */
+.card-course {
+  background: #161c22;
+  display: inline-block;
+  height: 25%;
+  margin: 1rem;
+  position: relative;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+}
 
+.card-course-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-course-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-course-1 img {
+  display: block;
+  height: 75px;
+  margin: auto;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -176,11 +203,58 @@ hr.fade {
   position: fixed;
 }
 
+/* Resources Table */
+.resourceTable {
+  /* table-layout: auto; */
+}
+
+.resourceTable .nonSection {
+  width: 12%;
+}
+
+.resourceTable td, th {
+  border: 2px solid #161c22;
+  padding: 5px;
+}
+
+.resourceTable th {
+  padding: 10px 0px 10px 5px;
+  text-align: left;
+}
+
 .record {}
 
 .record th, td {
   border: 2px solid #c8d1d9;
   padding: 5px;
+}
+
+/* CS 161 Demo Cards */
+.cs161-demo-table {
+  display: flex;
+}
+
+.cs161-demo-table .demo-card {
+  margin: 5px;
+  display: flex;
+  border-color: gray;
+  border-style: dotted;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.cs161-demo-table .demo-card .picture {
+  width: 40%;
+  text-align: center;
+  margin: 1em 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cs161-demo-table .demo-card .description {
+  flex-grow: 1;
+  vertical-align: middle;
+  padding: 2px;
 }
 
 /* Blog Post Styling */

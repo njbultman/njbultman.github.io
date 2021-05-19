@@ -203,58 +203,11 @@ hr.fade {
   position: fixed;
 }
 
-/* Resources Table */
-.resourceTable {
-  /* table-layout: auto; */
-}
-
-.resourceTable .nonSection {
-  width: 12%;
-}
-
-.resourceTable td, th {
-  border: 2px solid #161c22;
-  padding: 5px;
-}
-
-.resourceTable th {
-  padding: 10px 0px 10px 5px;
-  text-align: left;
-}
-
 .record {}
 
 .record th, td {
   border: 2px solid #c8d1d9;
   padding: 5px;
-}
-
-/* CS 161 Demo Cards */
-.cs161-demo-table {
-  display: flex;
-}
-
-.cs161-demo-table .demo-card {
-  margin: 5px;
-  display: flex;
-  border-color: gray;
-  border-style: dotted;
-  width: 25%;
-  border-radius: 5px;
-}
-
-.cs161-demo-table .demo-card .picture {
-  width: 40%;
-  text-align: center;
-  margin: 1em 0;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.cs161-demo-table .demo-card .description {
-  flex-grow: 1;
-  vertical-align: middle;
-  padding: 2px;
 }
 
 /* Blog Post Styling */

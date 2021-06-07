@@ -11,6 +11,10 @@ body {
   font-family: 'HelveticaNeue-Light', 'Arial', sans-serif;
 }
 
+.link-list:hover {
+  border-bottom: solid 3px #c8d1d9;
+}
+
 /* Text Fade Animation */
 #body-fade {
   animation: fadein 1s;
@@ -259,4 +263,5 @@ hr.fade {
   clear: both;
   display: table;
 }
+
 
